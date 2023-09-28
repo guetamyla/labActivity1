@@ -4,7 +4,7 @@ HTML TAGS
 ## Description
 "demonstate how these tags affect content and layout on a web page".
 ### Activities
-[Activity 1](Activity1.html)
+[Activity 1](https://github.com/guetamyla/labActivity1/blob/main/Lab.1/index.html)
 
 #### Members
 - Myla E. Gueta
