@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        // JavaScript variables
+        var groupName = "Kwadrants Group";
+        var members = ["GUETA MYLA", "GURAY MA. DIANA", "GERERO KIM", "GRANADO KAYE", "GANDO JOHN HARRY", "GERERO ANGELO"];
+        var imageUrl = "./img/SORSU.jpg";
+        var headingTags = ["html", "html", "html", "html", "html"];
+        var term = "HTML";
+        var description = "The Hypertext Markup Language";
+        var linkText = "Go Back";
+        var linkUrl = "index.html";
+        var numberOfMembers = members.length;
+        var documentTitle = "HTML TAGS";
+    </script>
+</head>
+<body>
+    <h1 id="titleVariable"></h1>
+
+    <h3>Text Tags</h3>
+    <p>This is <strong id="groupNameVariable"></strong>.</p>
+
+    <h3>List Tag</h3>
+    <ul id="membersList"></ul>
+
+    <h3>Image Tag</h3>
+    <img src="" id="imageTagVariable">
+
+    <h3>Heading Tag</h3>
+    <h1 id="h1Variable"></h1>
+    <h2 id="h2Variable"></h2>
+    <h3 id="h3Variable"></h3>
+    <h4 id="h4Variable"></h4>
+    <h5 id="h5Variable"></h5>
+
+    <h3>Definition Tag</h3>
+    <dl>
+        <dt id="termVariable"></dt>
+        <dd id="descriptionVariable"></dd>
+    </dl>
+
+    <a href="#" id="linkVariable"></a>
+
+    <script>
+        // Set JavaScript variable values in HTML
+        document.getElementById("titleVariable").innerText = documentTitle;
+
+        document.getElementById("groupNameVariable").innerText = groupName;
+
+        var membersList = document.getElementById("membersList");
+        members.forEach(function (member) {
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(member));
+            membersList.appendChild(li);
+        });
+
+        document.getElementById("imageTagVariable").src = imageUrl;
+
+        document.getElementById("h1Variable").innerText = headingTags[0];
+        document.getElementById("h2Variable").innerText = headingTags[1];
+        document.getElementById("h3Variable").innerText = headingTags[2];
+        document.getElementById("h4Variable").innerText = headingTags[3];
+        document.getElementById("h5Variable").innerText = headingTags[4];
+
+        document.getElementById("termVariable").innerText = term;
+        document.getElementById("descriptionVariable").innerText = description;
+
+        var linkElement = document.getElementById("linkVariable");
+        linkElement.innerText = linkText;
+        linkElement.href = linkUrl;
+    </script>
+</body>
+</html>
